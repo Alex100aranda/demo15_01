@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación XV Años</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- Fuentes Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+</head>
+<body>
+  <section class="portada">
+  <div class="overlay">
+    <h1 class="titulo">Mis XV Años</h1>
+    <p class="nombre">Valeria</p>
+  </div>
+</section>
+
+<!-- Sección Fecha -->
+<section class="seccion-fecha" data-aos="fade-up">
+  <div class="contenedor-fecha">
+    <h2>¡Te espero el sábado 23 de agosto, 2026!</h2>
+    <p>Faltan</p>
+    <div id="countdown" class="countdown">
+      <div><span id="dias">--</span><small>días</small></div>
+      <div><span id="horas">--</span><small>horas</small></div>
+      <div><span id="minutos">--</span><small>min</small></div>
+      <div><span id="segundos">--</span><small>seg</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Padres -->
+<section class="seccion-invitacion">
+  <div class="invitacion-caja" data-aos="fade-up" data-aos-duration="1200">
+    <p>Con la bendición de Mis Padres</p>
+    <h3>Sofía Romero</h3>
+    <h3>Carlos Trujillo</h3>
+    <p>TENEMOS EL HONOR DE INVITARLOS</p>
+    <p>a la celebración de mis 15 años</p>
+    <h2>Valeria</h2>
+  </div>
+</section>
+
+
+<!-- Sección ceremonia -->
+<section class="seccion-ceremonia">
+  <div class="contenedor-ceremonia" data-aos="fade-up" data-aos-duration="1200">
+    <h2>Ceremonia Religiosa</h2>
+    <i class="fa-solid fa-church icono-ceremonia"></i>
+    <p><strong>Parroquia de la Divina Providencia</strong></p>
+    <p>Quintana Roo No. 50,<br>Col. Roma Sur, Cuauhtémoc,<br>06760 Ciudad de México, CDMX</p>
+
+    <a href="https://www.google.com/maps?q=19.40514298186839,-99.16821392565107" 
+       target="_blank" 
+       class="boton-mapa">Abrir mapa</a>
+  </div>
+</section>
+
+
+<!-- Sección Recepción -->
+<section class="seccion-recepcion">
+  <div class="contenedor-recepcion" data-aos="fade-up" data-aos-duration="1200">
+    <h2>Recepción</h2>
+    <i class="fa-solid fa-champagne-glasses icono-recepcion"></i>
+    <p><strong>Salón de Eventos Bellagio</strong></p>
+    <p>Av. Río Churubusco 601,<br>Col. Xoco, Benito Juárez,<br>03330 Ciudad de México, CDMX</p>
+
+    <a href="https://www.google.com/maps?q=19.373364,-99.154197" 
+       target="_blank" 
+       class="boton-mapa boton-blanco">Abrir mapa</a>
+  </div>
+</section>
+
+
+<!-- Sección Confirmación -->
+<section class="seccion-confirmacion">
+  <div class="contenedor-confirmacion" data-aos="fade-up">
+    <h2>Confirmación de Asistencia</h2>
+    <p>Da clic en el siguiente enlace para confirmar</p>
+
+    <!-- Botón azul -->
+    <!-- Botón Confirmar con estilo igual al de ceremonia -->
+<button class="boton-mapa" id="btnConfirmar">Confirmar</button>
+
+
+    <!-- Formulario oculto -->
+    <div id="formularioConfirmacion" class="formulario-whatsapp oculto">
+      <p>Agradecemos tu presencia sin niños.</p>
+      <a href="https://wa.me/525536659768?text=Quiero%20una%20invitación%20como%20esta%2C%20gracias"
+         target="_blank"
+         class="boton-mapa boton-azul">
+        Enviar confirmación por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Código de Vestimenta -->
+<section class="seccion-vestimenta">
+  <div class="contenedor-vestimenta" data-aos="fade-up">
+    <h2>Código de Vestimenta</h2>
+    <p>Formal</p>
+    <div class="imagen-vestimenta">
+      <img src="img/vestimenta.jpg" alt="Código de vestimenta formal">
+    </div>
+  </div>
+</section>
+
+<!-- Sección Mesa de Regalos -->
+<section class="seccion-regalos">
+  <div class="contenedor-regalos" data-aos="fade-up">
+    <h2>Mesa de Regalos</h2>
+    <p>Tu presencia es el mejor regalo que me puedes ofrecer, pero si quieres tener un bonito detalle te dejo algunas opciones.</p>
+    
+    <a href="https://www.liverpool.com.mx" 
+       target="_blank" 
+       class="boton-mapa boton-blanco">Regalos</a>
+  </div>
+</section>
+
+<!-- Sección de Agradecimiento -->
+<section class="seccion-gracias">
+  <div class="overlay-gracias" data-aos="fade-up" data-aos-duration="1200">
+    <p class="texto-gracias">GRACIAS POR ACOMPAÑARME</p>
+  </div>
+</section>
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="main.js"></script>
+
+<script>
+  document.getElementById('btnConfirmar').addEventListener('click', function () {
+    const formulario = document.getElementById('formularioConfirmacion');
+    formulario.classList.toggle('oculto');
+  });
+</script>
+
+
+
+</body>
+</html>

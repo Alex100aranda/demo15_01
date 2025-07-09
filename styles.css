@@ -1,0 +1,480 @@
+/* IMPORTACIÓN DE FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;600&display=swap');
+
+/* FUENTE GLOBAL */
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* SECCIÓN PORTADA */
+.portada {
+  background-image: url('img/portada.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+/* FONDO SEMITRANSPARENTE */
+.overlay {
+  background-color: rgba(0, 0, 50, 0.3); /* Azul oscuro semitransparente */
+  color: white;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* TÍTULO PRINCIPAL */
+.titulo {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #e6f0fa;
+}
+
+/* NOMBRE */
+.nombre {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  color: #ffffff;
+  font-family: 'Dancing Script', cursive;
+}
+
+/* RESPONSIVO: PORTADA */
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 2.2rem;
+  }
+
+  .nombre {
+    font-size: 3rem;
+  }
+}
+
+/* SECCIÓN FECHA / CUENTA REGRESIVA */
+.seccion-fecha {
+  background-color: #e6f0fa; /* Azul pastel muy claro */
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #5a8dad; /* Azul intermedio */
+}
+
+.contenedor-fecha h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contenedor-fecha p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 0 1rem;
+  max-width: 100%;
+}
+
+.countdown div {
+  background: #ffffff;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #5a8dad;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.countdown span {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.countdown small {
+  font-size: 0.75rem;
+  margin-top: 4px;
+}
+
+/* RESPONSIVO: FECHA */
+@media (max-width: 400px) {
+  .countdown div {
+    width: 65px;
+    height: 65px;
+  }
+
+  .countdown span {
+    font-size: 1.2rem;
+  }
+
+  .contenedor-fecha h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* SECCIÓN INVITACIÓN (PADRES Y VALERIA) */
+.seccion-invitacion {
+  background-color: #8ab6d6; /* Fondo azul cenicienta */
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invitacion-caja {
+  background-color: #edf6fa; /* Fondo más claro, tipo doble fondo */
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: #2e5d7d; /* Azul más oscuro para legibilidad */
+}
+
+.invitacion-caja p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.invitacion-caja h3 {
+  font-size: 1.6rem;
+  margin: 0.5rem 0;
+}
+
+.invitacion-caja h2 {
+  font-size: 2.2rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  color: #5a8dad;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Dancing Script', cursive;
+}
+
+/* RESPONSIVO: INVITACIÓN */
+@media (max-width: 600px) {
+  .invitacion-caja p,
+  .invitacion-caja h3 {
+    font-size: 1.2rem;
+  }
+
+  .invitacion-caja h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* SECCIÓN CEREMONIA RELIGIOSA */
+
+.seccion-ceremonia {
+  background-color: #e6f0fa; /* Azul pastel claro */
+  padding: 5rem 2rem;
+  text-align: center;
+  color: #2e5d7d;
+}
+
+.contenedor-ceremonia {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.seccion-ceremonia h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #5a8dad;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.icono-ceremonia {
+  font-size: 3.2rem;
+  color: #5a8dad;
+  margin-bottom: 1rem;
+}
+
+.seccion-ceremonia p {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.mapa {
+  margin-top: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* BOTÓN MAPA */
+.boton-mapa {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  background-color: #8ab6d6;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.boton-mapa:hover {
+  background-color: #5a8dad;
+}
+
+/* SECCIÓN RECEPCIÓN */
+.seccion-recepcion {
+  background-color: #8ab6d6; /* Mismo fondo que sección padres */
+  padding: 5rem 2rem;
+  text-align: center;
+  color: #2e5d7d;
+}
+
+.contenedor-recepcion {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.seccion-recepcion h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #edf6fa;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.icono-recepcion {
+  font-size: 3rem;
+  color: #edf6fa;
+  margin-bottom: 1rem;
+}
+
+.seccion-recepcion p {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+/* BOTÓN BLANCO PERSONALIZADO */
+.boton-blanco {
+  background-color: #ffffff;
+  color: #5a8dad;
+  border: 2px solid #5a8dad;
+}
+
+.boton-blanco:hover {
+  background-color: white;
+  color: white;
+}
+
+/* SECCIÓN CONFIRMACIÓN */
+.seccion-confirmacion {
+  background-color: #e6f0fa;
+  padding: 5rem 2rem;
+  text-align: center;
+  color: #2e5d7d;
+}
+
+.contenedor-confirmacion {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.seccion-confirmacion h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  color: #5a8dad;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.seccion-confirmacion p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* FORMULARIO WHATSAPP */
+.formulario-whatsapp {
+  margin-top: 2rem;
+}
+
+.oculto {
+  display: none;
+}
+
+/* BOTÓN BLANCO PERSONALIZADO (para <a> y <button>) */
+.boton-blanco {
+  background-color: #ffffff;
+  color: #5a8dad;
+  border: 2px solid #5a8dad;
+  border-radius: 8px;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton-blanco:hover {
+  background-color: #5a8dad;
+  color: #2e5d7d;
+}
+
+.boton-azul {
+  background-color: #5a8dad;
+  color: #ffffff;
+}
+
+.boton-azul:hover {
+  background-color: #2e5d7d;
+}
+
+
+
+/* SECCIÓN VESTIMENTA */
+.seccion-vestimenta {
+  background-color: #8ab6d6; /* Mismo fondo que sección padres/recepción */
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #2e5d7d;
+}
+
+.contenedor-vestimenta {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.seccion-vestimenta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #edf6fa;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.seccion-vestimenta p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.iconos-vestimenta {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: #ffffff;
+}
+
+/* IMAGEN DE VESTIMENTA COMO ÍCONO */
+.imagen-vestimenta {
+  margin-top: 1rem;
+}
+
+.imagen-vestimenta img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* SECCIÓN MESA DE REGALOS */
+.seccion-regalos {
+  background-color: #e6f0fa; /* Mismo fondo que secciones claras */
+  padding: 5rem 2rem;
+  text-align: center;
+  color: #2e5d7d;
+}
+
+.contenedor-regalos {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.seccion-regalos h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #5a8dad;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.seccion-regalos p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.boton-mapa {
+  background-color: #8ab6d6;
+  color: white;
+
+}
+
+
+/* SECCIÓN GRACIAS */
+/* SECCIÓN GRACIAS */
+.seccion-gracias {
+  position: relative;
+  background-image: url('img/final.jpg'); /* Ajusta si el nombre es otro */
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay que oscurece la imagen */
+.overlay-gracias {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Coloca el contenido hacia arriba */
+  padding-top: 100%; /* Empuja el contenido hacia abajo */
+}
+
+
+/* TEXTO CENTRADO */
+.texto-gracias {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .texto-gracias {
+    font-size: 1.8rem;
+  }
+}
