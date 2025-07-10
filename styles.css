@@ -11,6 +11,7 @@
 
 /* SECCIÓN PORTADA */
 .portada {
+  border: 8px solid #001f3f; /* azul marino */
   background-image: url('img/portada.jpg');
   background-size: cover;
   background-position: center;
@@ -278,8 +279,8 @@
 
 /* BOTÓN BLANCO PERSONALIZADO */
 .boton-blanco {
-  background-color: #ffffff;
-  color: #5a8dad;
+  background-color: white;
+  color: white;
   border: 2px solid #5a8dad;
 }
 
@@ -351,6 +352,23 @@
   background-color: #2e5d7d;
 }
 
+#formConfirmacion input,
+#formConfirmacion select,
+#formConfirmacion textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 2px solid #5a8dad;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+#formConfirmacion textarea {
+  resize: vertical;
+  min-height: 80px;
+}
 
 
 /* SECCIÓN VESTIMENTA */
@@ -440,6 +458,7 @@
 .seccion-gracias {
   position: relative;
   background-image: url('img/final.jpg'); /* Ajusta si el nombre es otro */
+  border: 8px solid #001f3f; /* azul marino */
   background-size: cover;
   background-position: center;
   height: 70vh;
@@ -478,3 +497,19 @@
     font-size: 1.8rem;
   }
 }
+
+
+.boton-unificado {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-width: 180px;
+  box-sizing: border-box;
+}
+
