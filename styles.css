@@ -131,6 +131,32 @@
   }
 }
 
+.btn-musica {
+  background-color: #5a8dad;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-musica .icono-play {
+  font-size: 1.2rem;
+  color: white; /* Asegura que la flecha ▶ sea blanca */
+}
+
+.btn-musica:hover {
+  background-color: #417b99;
+}
+
+
+
 /* SECCIÓN INVITACIÓN (PADRES Y VALERIA) */
 .seccion-invitacion {
   background-color: #8ab6d6; /* Fondo azul cenicienta */

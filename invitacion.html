@@ -26,6 +26,14 @@
 <!-- Sección Fecha -->
 <section class="seccion-fecha" data-aos="fade-up">
   <div class="contenedor-fecha">
+
+    <!-- 🎵 Botón de reproducción de música -->
+<button class="btn-musica" onclick="toggleAudio()">
+  <span class="icono-play">▶</span> Mi canción
+</button>
+<audio id="audioCancion" src="vals.mp3"></audio>
+
+
     <h2>¡Te espero el sábado 23 de agosto, 2026!</h2>
     <p>Faltan</p>
     <div id="countdown" class="countdown">
@@ -36,6 +44,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- Sección Padres -->
 <section class="seccion-invitacion">
@@ -142,6 +151,26 @@
     <p class="texto-gracias">GRACIAS POR ACOMPAÑARME</p>
   </div>
 </section>
+
+<script>
+  const audio = document.getElementById('audioCancion');
+  let isPlaying = false;
+
+  function toggleAudio() {
+    if (isPlaying) {
+      audio.pause();
+    } else {
+      audio.play();
+    }
+    isPlaying = !isPlaying;
+  }
+
+  // Opcional: detener audio al finalizar
+  audio.addEventListener('ended', () => {
+    isPlaying = false;
+  });
+</script>
+
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
